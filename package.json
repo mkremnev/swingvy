@@ -4,7 +4,8 @@
   "description": "Practice project swingvy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,14 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"
+  },
+  "lint-staged": {
+    "*.{js,scss,css,json,html,yaml,yml}": [
+      "prettier --write ."
+    ],
+    "*.js": "eslint --cache --fix"
   }
 }
