@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env) => {
   const devMode = env.mode === 'development';
@@ -10,7 +11,7 @@ module.exports = (env) => {
     plugins.push(
       new MiniCssExtractPlugin({
         linkType: 'text/css',
-        filename: './css/style.css',
+        filename: 'css/style.css',
       })
     );
   }
@@ -21,6 +22,13 @@ module.exports = (env) => {
       template: './public/index.html',
     })
   );
+
+  plugins.push(
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/fonts', to: './fonts' }],
+    })
+  );
+
   return {
     entry: ['./src/js/index.js', './src/css/style.scss'],
     output: {
