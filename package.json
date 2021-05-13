@@ -1,0 +1,25 @@
+{
+  "name": "swingvy",
+  "version": "1.0.0",
+  "description": "Practice project swingvy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkremnev/swingvy.git"
+  },
+  "keywords": [
+    "Webpack",
+    "HTML5",
+    "JS",
+    "SCSS"
+  ],
+  "author": "Maxim Kremnev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkremnev/swingvy/issues"
+  },
+  "homepage": "https://github.com/mkremnev/swingvy#readme"
+}
