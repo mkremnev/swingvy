@@ -1,1 +1,16 @@
 @import '~bootstrap/scss/bootstrap';
+
+.header {
+  .header-nav {
+    .header-logo {
+      flex-basis: 25%;
+    }
+    .header-link {
+      list-style: none;
+      flex-basis: 50%;
+    }
+    .header-authorized {
+      flex-basis: 25%;
+    }
+  }
+}
