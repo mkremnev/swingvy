@@ -1,0 +1,49 @@
+{
+  "name": "swingvy",
+  "version": "1.0.0",
+  "description": "Practice project swingvy",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint --check .",
+    "lint:fix": "prettier --write . && eslint --cache --fix .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkremnev/swingvy.git"
+  },
+  "keywords": [
+    "Webpack",
+    "HTML5",
+    "JS",
+    "SCSS"
+  ],
+  "author": "Maxim Kremnev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkremnev/swingvy/issues"
+  },
+  "homepage": "https://github.com/mkremnev/swingvy#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "html-webpack-plugin": "^4.5.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "lint-staged": {
+    "*.{js,scss,css,json,html,yaml,yml}": [
+      "prettier --write ."
+    ],
+    "*.js": "eslint --cache --fix"
+  }
+}
