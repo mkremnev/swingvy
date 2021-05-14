@@ -10,8 +10,8 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <nav class="header-nav d-flex flex-row flex-nowrap">
+      <header class="header pt-3 pb-3">
+        <nav class="header-nav d-flex flex-row flex-nowrap align-items-center">
           <a href="#" class="header-logo">
             <svg
               width="156"
@@ -90,21 +90,69 @@
             </svg>
           </a>
           <ul class="header-link d-flex list-group flex-row">
-            <li><a href="#">Products</a></li>
+            <li>
+              <a class="container-submenu" href="#">Products</a>
+              <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+              </ul>
+            </li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Partners</a></li>
-            <li><a href="#">Company</a></li>
+            <li>
+              <a class="container-submenu" href="#">Company</a>
+              <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+              </ul>
+            </li>
           </ul>
-          <div
-            class="header-authorized d-flex flex-row justify-content-between"
-          >
-            <button type="button" class="header-signin">Sign in</button>
-            <button type="button" class="header-requestdemo">
+          <div class="header-authorized d-flex flex-row justify-content-center">
+            <button type="button" class="header-signin btn">Sign in</button>
+            <button type="button" class="header-requestdemo btn btn-primary">
               Request demo
             </button>
           </div>
         </nav>
       </header>
     </div>
+    <section class="container-fluid p-0 section-wrapper">
+      <div class="first-line">
+        <div class="section section-item1">
+          <img src="img/content/section-1.png" alt="Section-item" />
+        </div>
+        <div class="section section-item2">
+          <img src="img/content/section-2.png" alt="Section-item" />
+        </div>
+        <div class="section section-item3">
+          <img src="img/content/section-3.png" alt="Section-item" />
+        </div>
+      </div>
+      <div class="second-line">
+        <div class="section section-item4">
+          <img src="img/content/section-4.png" alt="Section-item" />
+        </div>
+        <div class="section section-text">
+          <h3>people operations platform</h3>
+          <div class="section-text-subtitle">
+            For HR people who do everything.
+          </div>
+          <button type="button" class="btn btn-primary">Request demo</button>
+        </div>
+        <div class="section section-item5">
+          <img src="img/content/section-5.png" alt="Section-item" />
+        </div>
+      </div>
+      <div class="third-line">
+        <div class="section section-item6">
+          <img src="img/content/section-6.png" alt="Section-item" />
+        </div>
+        <div class="section section-item7">
+          <img src="img/content/section-7.png" alt="Section-item" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

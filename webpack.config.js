@@ -19,7 +19,7 @@ module.exports = (env) => {
   plugins.push(
     new HtmlWebpackPlugin({
       title: 'Swingvy',
-      template: './public/index.html',
+      template: './src/index.html',
     })
   );
 
@@ -71,8 +71,19 @@ module.exports = (env) => {
             'sass-loader',
           ],
         },
+        {
+          test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+            publicPath: 'img',
+          },
+        },
       ],
     },
     plugins,
+    devServer: {
+      contentBase: path.resolve(__dirname, './src'),
+    },
   };
 };
